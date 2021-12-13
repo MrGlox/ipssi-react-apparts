@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 
+import { List } from "./components";
 import "./App.css";
-
-import { Item } from "./components";
 
 class App extends Component {
   render() {
@@ -10,12 +9,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1>Appartments</h1>
-          <Item title="Appartment 1" status={false}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
-            exercitationem, placeat officiis blanditiis iusto asperiores omnis
-            voluptatibus inventore consequatur facere magni odit voluptas illo
-            cum maxime molestias eos? Placeat, eligendi.
-          </Item>
+          <List />
         </header>
       </div>
     );

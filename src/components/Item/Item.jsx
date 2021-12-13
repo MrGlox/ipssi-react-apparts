@@ -11,7 +11,6 @@ const Item = ({ title, status, children }) => (
         }
       ></div>
     </h3>
-
     <p>{children}</p>
   </div>
 );
