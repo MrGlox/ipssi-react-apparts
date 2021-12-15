@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 
-import { Button } from "components";
-
 class Clock extends Component {
   state = {
     date: new Date().toLocaleTimeString("fr-FR"),
