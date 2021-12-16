@@ -5,10 +5,14 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+import { Provider as MainProvider } from "contexts/MainContext";
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <MainProvider>
+        <App />
+      </MainProvider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
