@@ -23,7 +23,7 @@ const FetchData = () => {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  });
 
   if (error) {
     return <div>ERROR</div>;
