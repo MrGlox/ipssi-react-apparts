@@ -7,9 +7,14 @@ const Appart = () => {
   const { id } = useParams();
   const { data } = useContext(MainContext);
 
-  const { title, status, description } = data.find(
-    (appart) => appart.id.toString() === id
-  );
+  const appart = data.find((appart) => appart.id.toString() === id);
+
+  // 404 part
+  if (!appart) {
+    return <div>Appartement non trouvé</div>;
+  }
+
+  const { title, status, description } = appart;
 
   return (
     <div>
