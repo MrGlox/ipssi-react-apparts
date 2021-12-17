@@ -19,7 +19,7 @@ const Provider = ({ children }) => {
   };
 
   return (
-    <MainContext.Provider value={{ handleChange, text, filtered }}>
+    <MainContext.Provider value={{ data, handleChange, text, filtered }}>
       {children}
     </MainContext.Provider>
   );

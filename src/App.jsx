@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Routes, Route, NavLink } from "react-router-dom";
 
 import Apparts from "containers/Apparts";
+import Appart from "containers/Appart";
 import Clock from "containers/Clock";
 import FetchData from "containers/FetchData";
 
@@ -55,6 +56,7 @@ class App extends Component {
           <Route path="clock" element={<Clock></Clock>} />
           <Route path="todo" element={<>This is to do</>} />
           <Route path="fetch-data" element={<FetchData></FetchData>} />
+          <Route path="appart/:id" element={<Appart></Appart>} />
         </Routes>
       </div>
     );
